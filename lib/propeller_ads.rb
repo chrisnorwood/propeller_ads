@@ -5,6 +5,7 @@ require "httparty"
 require "propeller_ads/version"
 require "propeller_ads/relation"
 require "propeller_ads/resource"
+require "propeller_ads/resource_collection"
 require "propeller_ads/client"
 
 module PropellerAds
