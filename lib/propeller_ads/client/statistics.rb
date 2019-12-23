@@ -3,7 +3,7 @@
 module PropellerAds
   class Client
     module Statistics
-      def statistics(options)
+      def statistics(options={})
         get("/adv/statistics", options)
       end
     end
