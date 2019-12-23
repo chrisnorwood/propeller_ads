@@ -2,6 +2,8 @@
 
 require "propeller_ads/client/connection"
 require "propeller_ads/client/campaigns"
+require "propeller_ads/client/creatives"
+require "propeller_ads/client/statistics"
 require "propeller_ads/client/collections"
 
 module PropellerAds
@@ -10,6 +12,8 @@ module PropellerAds
     include HTTParty
     include PropellerAds::Client::Connection
     include PropellerAds::Client::Campaigns
+    include PropellerAds::Client::Creatives
+    include PropellerAds::Client::Statistics
     include PropellerAds::Client::Collections
 
     base_uri 'https://ssp-api.propellerads.com/v5'
